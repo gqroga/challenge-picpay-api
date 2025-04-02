@@ -1,14 +1,14 @@
 package com.challenge_picpay_api.repositories;
 
-import org.apache.catalina.User;
+import com.challenge_picpay_api.model.UserModel;
 import org.springframework.data.jpa.repository.JpaRepository;
 
 import java.util.Optional;
 
-public interface UserRepository extends JpaRepository<User, Long> {
+public interface UserRepository extends JpaRepository<UserModel, Long> {
 
-    Optional<User> findUserByDocument(String document);
+    Optional<UserModel> findUserByDocument(String document);
 
-    Optional<User> findUserById(String id);
+    Optional<UserModel> findUserById(Long id);
 
 }

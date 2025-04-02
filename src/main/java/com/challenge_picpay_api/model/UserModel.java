@@ -1,12 +1,18 @@
 package com.challenge_picpay_api.model;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.EnumType;
+import jakarta.persistence.Enumerated;
 import com.challenge_picpay_api.enums.UserType;
-import jakarta.persistence.*;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.EqualsAndHashCode;
-
+import jakarta.persistence.GenerationType;
 import java.math.BigDecimal;
+import jakarta.persistence.GeneratedValue;
 
 @Entity
 @Data
